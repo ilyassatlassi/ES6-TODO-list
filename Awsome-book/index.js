@@ -10,7 +10,7 @@ if (localStorage.tasks) {
   listBook.arrayOfTitle = JSON.parse(localStorage.getItem('tasks'));
 }
 
-function AddToLocal(arrayOfTitle) {
+const AddToLocal = (arrayOfTitle) => {
   window.addEventListener('beforeunload', () => {
     localStorage.setItem('tasks', JSON.stringify(arrayOfTitle));
   });
