@@ -14,7 +14,7 @@ const AddToLocal = (arrayOfTitle) => {
   window.addEventListener('beforeunload', () => {
     localStorage.setItem('tasks', JSON.stringify(arrayOfTitle));
   });
-}
+};
 
 // Add function
 add.onclick = () => {
